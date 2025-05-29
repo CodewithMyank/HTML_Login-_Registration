@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;    
+        }
+        button{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <label for="name">NAME:</label><BR>
+    <input type="text" id="name" placeholder="Enter the name ">
+    <br><br>
+    <label for="email">EMAIL:</label><br>
+    <input type="email" id="email">
+    <br><br>
+    <label for="age">AGE:</label><br>
+    <input type="number" id="age"><BR></BR>
+    <label for="password">PASSWORD:</label><br>
+    <input type="password" id="pass">
+    <!-- <br><br>
+    <label for="genader">GENDER:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="male">Female</label>
+    <input type="radio"  id="other" name="gender" value="other">
+    <label for="male">Other</label> -->
+
+
+
+    <br><br><br>
+    <a href="login.html">LOGIN </a>
+
+    <button >
+          <a href="/task1/movieapp.html">HOME PAGE  </a>
+    </button>
+
+    <button onclick="
+    let c = document.getElementById('name').value;
+    let c1 = document.getElementById('email').value;
+    let c2=parseInt(document.getElementById('age').value);
+    let c3=parseInt(document.getElementById('pass').value);
+    // let c3=parseInt(document.getElementById(gender).value);
+    
+
+    localStorage.setItem('Username',c);
+    localStorage.setItem('password',c3);
+
+    console.log('NAME:', c);
+    console.log('EMAIL:', c1);
+    // console.log('GENDER:',c3);
+    console.log('AGE:', c2);
+    console.log('PASSWORD',c3);
+    alert('Registration Successful!');
+     window.location.href = 'login.html';
+    ">SUBMIT</button>
+
+
+</body>
+</html>
